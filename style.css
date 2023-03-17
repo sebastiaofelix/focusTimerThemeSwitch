@@ -1,0 +1,186 @@
+:root {
+    --bgSlider:black;
+    --bgBody:white;
+    --fontColor:black;
+    --focusColor:#1195bd;
+    font-size: 64.5%;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color:var(--bgBody);
+    height: 72rem;
+    width: 128rem;
+    margin: auto;
+    position: relative;
+    display: flex;
+    -ms-flex-align: center;
+}
+
+.switchTheme{
+    position: absolute;
+    top: 10%;
+    left: 90%;
+}
+
+
+.container{
+    height: 40rem;
+    width: 90rem;
+    margin: 22rem 23rem;
+    box-sizing: border-box;
+    display: flex;
+    gap: 16rem;
+    align-items: center;
+    background-color: var(--bgBody);
+    
+}
+
+.timer {
+    height: 21rem;
+    width: 32rem;
+    display: grid;
+    margin:  0.8rem 0 1rem 0rem;
+    justify-items: center;
+}
+
+.timerBtn {
+    height: 4.9rem;
+    display: flex;
+    margin-right: 0.5rem;
+    gap: 3rem;
+}
+
+
+.clock {
+    height: 12rem;
+    width: 32rem;
+    font-size: 11rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'roboto';
+    color: var(--fontColor);
+}
+
+input{
+    z-index: 4;
+    width: 11rem;
+    position: absolute;
+    top: 10.8rem; 
+    left: 1.2rem;   
+}
+
+.slider {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 11rem;
+    height: 7px;
+    background: var(--bgSlider);
+    border-radius: 5px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--bgSlider);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+
+button{
+    background-color: transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: none;
+}
+
+button .control {
+    height: 4.9rem;
+    width: 5.5rem;
+}
+
+
+.themes {
+    display: grid;
+    height: 35rem;
+    width: 30.8rem;
+    grid-template-columns: 15.4rem 15.4rem;
+    box-sizing: border-box;
+    justify-items: center;
+    margin-top: 2rem;
+    column-gap: 1.5rem;
+} 
+
+.temas {
+    background-color: #E1E1E6;
+    box-sizing: border-box;
+    height: 15.2rem;  
+    width: 13.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:24px;
+    position: relative;
+}
+
+.temas button img{
+    position: absolute;
+    top: 2.4rem;
+    left: 4.7rem;
+}
+
+.temas .market img{
+    position: absolute;
+    top: 2.4rem;
+    left: 4.1rem;
+}
+
+.temas .rain img{
+    position: absolute;
+    top: 2.4rem;
+    left: 4.4rem;
+}
+
+#btn {
+    border-radius:24px; 
+    height: 15.2rem;  
+    width: 13.8rem;
+}
+
+#btn:focus{
+    background:var(--focusColor);
+}
+
+.timerBtn .hide, .switchTheme .hide, div button .hide{
+    display: none;
+}
+
+/* Dark theme switch button */
+
+.darkTheme{
+    background-color: #121214;
+}
+
+.darkFontColor{
+    color: white;
+}
+
+.darkButtons{
+    background-color: #29292E;
+}
+
+#darkBtn:focus{
+    background:#0A3442;
+}
+
+.lightButtons{
+    background-color: #ffffff;
+}
